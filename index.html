@@ -20,6 +20,16 @@
             color: white;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
+        .banner {
+            background: url('banner-image.jpg') no-repeat center center; /* Replace with your banner image */
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
         nav {
             display: flex;
             justify-content: center;
@@ -36,10 +46,10 @@
             color: white;
             padding: 14px 20px;
             text-decoration: none;
-            transition: background-color 0.3s;
         }
         nav a:hover {
             background-color: #e63946;
+            border-radius: 5px;
         }
         main {
             max-width: 800px;
@@ -64,9 +74,6 @@
             padding: 10px;
             background-color: #e63946; /* Red */
             color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
         }
         .benefits {
             list-style-type: square;
@@ -78,6 +85,9 @@
     <header>
         <h1>El Tomate Chonto</h1>
     </header>
+    <div class="banner">
+        <h2>Descubre los Beneficios del Tomate Chonto</h2>
+    </div>
     <nav>
         <ul>
             <li><a href="index.html">Inicio</a></li>
@@ -88,13 +98,8 @@
     <main>
         <section>
             <h2>¿De dónde viene?</h2>
-            <p>El tomate chonto es originario de América del Sur, especialmente de Colombia y Ecuador. Se caracteriza por su forma redonda y su color rojo intenso. Su cultivo se ha expandido a otras regiones tropicales debido a su versatilidad y sabor. Requiere suelos bien drenados para prosperar.</p>
+            <p>El tomate chonto es originario de América del Sur, especialmente de Colombia y Ecuador. Se caracteriza por su forma redonda y su color rojo intenso.</p>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_HRx_2LN4LDnfOFITB1RGM2Csgk4Th9cckQ&s" alt="Tomate Chonto">
-        </section>
-        <section>
-            <h2>Características del Tomate Chonto</h2>
-            <p>Este tomate es conocido por su excelente sabor y calidad, siendo una fuente rica de antioxidantes, vitaminas C y A, y licopeno, lo que contribuye a la salud cardiovascular y a una piel saludable.</p>
-            <p>Su forma y color lo hacen perfecto para diversas preparaciones culinarias, desde ensaladas hasta salsas y guisos.</p>
         </section>
         <section>
             <h2>Beneficios del Tomate Chonto</h2>
@@ -105,11 +110,6 @@
                 <li>Ayuda a la digestión.</li>
                 <li>Reduce el riesgo de enfermedades cardiovasculares.</li>
             </ul>
-        </section>
-        <section>
-            <h2>Uso en la Gastronomía</h2>
-            <p>Ideal para ensaladas, salsas y guisos, el tomate chonto es un ingrediente versátil que aporta frescura y color a cualquier plato.</p>
-            <p>También se puede usar en preparaciones como dips y como ingrediente en platos principales.</p>
         </section>
     </main>
     <footer>
