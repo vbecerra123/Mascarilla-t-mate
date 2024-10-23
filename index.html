@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomate Chonto - Información y Beneficios</title>
+    <title>El Tomate Chonto</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to a separate CSS file -->
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -14,16 +15,10 @@
         }
         header {
             text-align: center;
-            padding: 60px;
-            background-image: url('https://example.com/banner-image.jpg'); /* Reemplaza con una URL real */
-            background-size: cover;
+            padding: 20px;
+            background-color: #e63946; /* Red */
             color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
-        h1 {
-            font-size: 2.5em;
-            margin: 0;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         nav {
             display: flex;
@@ -35,46 +30,28 @@
             padding: 0;
         }
         nav li {
-            position: relative;
+            margin: 0 15px;
         }
         nav a {
             color: white;
             padding: 14px 20px;
             text-decoration: none;
-            display: block;
+            transition: background-color 0.3s;
         }
         nav a:hover {
             background-color: #e63946;
         }
-        .dropdown-child {
-            display: none;
-            position: absolute;
-            background-color: #333;
-            min-width: 160px;
-            z-index: 1;
-        }
-        nav li:hover .dropdown-child {
-            display: block;
-        }
-        section {
+        main {
+            max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            max-width: 800px;
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         h2 {
             color: #e63946;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #e63946;
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            margin-top: 20px;
         }
         img {
             max-width: 100%;
@@ -82,51 +59,32 @@
             border-radius: 5px;
             margin: 10px 0;
         }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #e63946; /* Red */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
         .benefits {
             list-style-type: square;
             margin-left: 20px;
-        }
-        .info-box {
-            border: 1px solid #e63946;
-            padding: 10px;
-            border-radius: 5px;
-            background-color: #fff3f3;
-            margin: 10px 0;
-        }
-        .statistics {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px 0;
-        }
-        .stat-item {
-            background-color: #e63946;
-            color: white;
-            padding: 20px;
-            border-radius: 10px;
-            width: 30%;
-            text-align: center;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>El Tomate Chonto</h1>
-        <p>Descubre sus orígenes, beneficios y más.</p>
     </header>
     <nav>
         <ul>
-            <li><button class="mainmenubtn">Menú Principal</button>
-                <div class="dropdown-child">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="informacion.html">Información del Producto</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </div>
-            </li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="informacion.html">Información del Producto</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
-    <center>
-        <iframe width="1280" height="960" frameborder="0" src="https://view.genially.com/66febb457c405d123b703ab5/interactive-content-tomate-chonto-afiche-2"></iframe>
-    </center>
     <main>
         <section>
             <h2>¿De dónde viene?</h2>
@@ -134,65 +92,28 @@
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_HRx_2LN4LDnfOFITB1RGM2Csgk4Th9cckQ&s" alt="Tomate Chonto">
         </section>
         <section>
-            <h2>¿Cómo se cosecha?</h2>
-            <p>La cosecha del tomate chonto se realiza generalmente a mano, cuando los frutos alcanzan su madurez. Los agricultores deben ser cuidadosos para evitar daños en los tomates y en la planta. Después, se pueden clasificar según su tamaño y calidad.</p>
-            <img src="https://img.lalr.co/cms/2021/04/19103902/Cultivo-de-tomate.jpg" alt="Cosecha de Tomates Chonto">
+            <h2>Características del Tomate Chonto</h2>
+            <p>Este tomate es conocido por su excelente sabor y calidad, siendo una fuente rica de antioxidantes, vitaminas C y A, y licopeno, lo que contribuye a la salud cardiovascular y a una piel saludable.</p>
+            <p>Su forma y color lo hacen perfecto para diversas preparaciones culinarias, desde ensaladas hasta salsas y guisos.</p>
         </section>
         <section>
-            <h2>Beneficios del tomate chonto en la piel</h2>
-            <p>El tomate chonto es rico en antioxidantes y vitaminas C y A, que protegen la piel. Sus beneficios incluyen:</p>
+            <h2>Beneficios del Tomate Chonto</h2>
+            <p>Los beneficios del tomate chonto incluyen:</p>
             <ul class="benefits">
-                <li>Reducción de arrugas y líneas finas.</li>
-                <li>Mejora la textura de la piel.</li>
-                <li>Hidratación natural.</li>
-                <li>Propiedades antiinflamatorias.</li>
+                <li>Rico en nutrientes esenciales.</li>
+                <li>Promueve la salud de la piel.</li>
+                <li>Ayuda a la digestión.</li>
+                <li>Reduce el riesgo de enfermedades cardiovasculares.</li>
             </ul>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQheNdN5yhvYTBlYTpftBqCRDiHrZyTPpGOrDRlV0MHSCOuYIJx2d4_hJSlZuGzuqywfXo&usqp=CAU" alt="Beneficios del Tomate Chonto en la piel">
-        </section>
-        <section class="statistics">
-            <div class="stat-item">
-                <h3>Vitaminas</h3>
-                <p>Rico en Vitamina C</p>
-            </div>
-            <div class="stat-item">
-                <h3>Antioxidantes</h3>
-                <p>Contiene licopeno, un potente antioxidante</p>
-            </div>
-            <div class="stat-item">
-                <h3>Fibra</h3>
-                <p>Ayuda a la digestión</p>
-            </div>
         </section>
         <section>
-            <h2>Mascarilla Facial a Base de Tomate Chonto</h2>
-            <p>La "Mascarilla Chonto" combina extracto de tomate chonto, arcilla verde, aloe vera y aceite de argán, ofreciendo beneficios hidratantes y regenerativos.</p>
-            <h3>¿Por qué elegir esta mascarilla?</h3>
-            <ul class="benefits">
-                <li>Rico en antioxidantes, ayuda a combatir el envejecimiento.</li>
-                <li>Mejora la textura de la piel y controla el acné.</li>
-                <li>Despigmentación natural y efecto revitalizante.</li>
-                <li>Elaborado con ingredientes naturales y sostenibles.</li>
-            </ul>
-            <h3>Proceso de Elaboración</h3>
-            <ol>
-                <li>Extraer el jugo de 2 tomates chontos maduros.</li>
-                <li>Mezclar con arcilla verde, aloe vera y aceite de argán.</li>
-                <li>Envasar en frascos de vidrio oscuro para preservar sus propiedades.</li>
-            </ol>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD10mFDPGPjw9c6jszYa-owT0ZW3Xc5ZwOAA&s" alt="Preparación del Suero de Tomate Chonto">
-        </section>
-        <section>
-            <h2>Conclusiones</h2>
-            <p>La mascarilla facial a base de tomate chonto ofrece una alternativa innovadora en la cosmética natural, dirigida a quienes buscan soluciones efectivas y respetuosas con el medio ambiente para el cuidado de la piel.</p>
+            <h2>Uso en la Gastronomía</h2>
+            <p>Ideal para ensaladas, salsas y guisos, el tomate chonto es un ingrediente versátil que aporta frescura y color a cualquier plato.</p>
+            <p>También se puede usar en preparaciones como dips y como ingrediente en platos principales.</p>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Información sobre el Tomate Chonto y su Mascarilla Facial</p>
+        <p>&copy; 2024 Información sobre el Tomate Chonto</p>
     </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            alert("¡Bienvenido a la página sobre el tomate chonto!");
-        });
-    </script>
 </body>
 </html>
