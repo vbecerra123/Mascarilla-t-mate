@@ -5,7 +5,152 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Tomate Chonto</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Tomate Chonto</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
+        body {
+            background-color: #ffe5e5; /* Fondo suave en rosa claro */
+            color: #343a40; /* Color del texto */
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #c0392b; /* Rojo oscuro */
+            color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #e74c3c; /* Rojo brillante */
+        }
+        .nav-link {
+            color: white; /* Color de los enlaces del menú */
+        }
+        .nav-link:hover {
+            background-color: #c0392b; /* Rojo oscuro al pasar el mouse */
+            border-radius: 5px;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff; /* Fondo blanco para el contenido */
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #c0392b; /* Rojo oscuro */
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 10px 0 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        input[type="submit"] {
+            background-color: #e74c3c; /* Rojo brillante */
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #c0392b; /* Rojo oscuro al pasar el mouse */
+        }
+        .social {
+            margin-top: 20px;
+        }
+        .social a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #c0392b; /* Rojo oscuro para enlaces sociales */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #c0392b; /* Rojo oscuro */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">Mascarilla Chonto</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="testimonios.html">Testimonios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <h2>¿Tienes preguntas?</h2>
+            <p>Si deseas más información sobre el tomate chonto o sobre nuestra mascarilla facial, no dudes en contactarnos:</p>
+            <form action="#" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+        <section class="social">
+            <h2>Síguenos en redes sociales</h2>
+            <p>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+                <a href="https://wa.me/tu_numero" target="_blank">WhatsApp</a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Información sobre el Tomate Chonto</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
         body {
             background-color: #ffe5e5; /* Fondo suave en rosa claro */
             color: #343a40; /* Color del texto */
