@@ -4,30 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Tomate Chonto</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to a separate CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #ffebcc; /* Warm light background */
-            margin: 0;
-            padding: 0;
+            background-color: #ffe5e5; /* Fondo suave en rosa claro */
+            color: #343a40; /* Color del texto */
         }
         header {
             text-align: center;
             padding: 20px;
-            background-color: #ff7f50; /* Coral */
+            background-color: #c0392b; /* Rojo oscuro */
             color: white;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #ff6347; /* Tomato */
+            background-color: #e74c3c; /* Rojo brillante */
         }
         nav ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
+            display: flex; /* Menú horizontal */
         }
         nav li {
             margin: 0 15px;
@@ -38,19 +37,19 @@
             text-decoration: none;
         }
         nav a:hover {
-            background-color: #e63946; /* Darker Tomato */
+            background-color: #c0392b; /* Rojo oscuro al pasar el mouse */
             border-radius: 5px;
         }
         main {
             max-width: 800px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #ffffff; /* Fondo blanco para el contenido */
             border-radius: 10px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         h2 {
-            color: #e63946;
+            color: #c0392b; /* Rojo oscuro */
         }
         form {
             display: flex;
@@ -68,7 +67,7 @@
             margin-bottom: 10px;
         }
         input[type="submit"] {
-            background-color: #ff6347; /* Tomato */
+            background-color: #e74c3c; /* Rojo brillante */
             color: white;
             border: none;
             padding: 10px;
@@ -77,7 +76,7 @@
             font-size: 16px;
         }
         input[type="submit"]:hover {
-            background-color: #e63946; /* Darker Tomato */
+            background-color: #c0392b; /* Rojo oscuro al pasar el mouse */
         }
         .social {
             margin-top: 20px;
@@ -85,12 +84,12 @@
         .social a {
             margin: 0 10px;
             text-decoration: none;
-            color: #e63946;
+            color: #c0392b; /* Rojo oscuro para enlaces sociales */
         }
         footer {
             text-align: center;
             padding: 10px;
-            background-color: #ff7f50; /* Coral */
+            background-color: #c0392b; /* Rojo oscuro */
             color: white;
         }
     </style>
@@ -130,14 +129,13 @@
                 <a href="https://wa.me/tu_numero" target="_blank">WhatsApp</a>
             </p>
         </section>
-        <section>
-            <h2>Comentarios</h2>
-            <textarea id="comments" name="comments" rows="4" placeholder="Deja tu comentario aquí..."></textarea>
-            <input type="submit" value="Enviar Comentario">
-        </section>
     </main>
     <footer>
         <p>&copy; 2024 Información sobre el Tomate Chonto</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
