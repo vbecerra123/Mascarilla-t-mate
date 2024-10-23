@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomate Chonto</title>
+    <title>Tomate Chonto - Información y Beneficios</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -14,10 +14,16 @@
         }
         header {
             text-align: center;
-            padding: 20px;
-            background-color: #e63946;
+            padding: 40px;
+            background-image: url('https://example.com/banner-image.jpg'); /* Replace with a real image URL */
+            background-size: cover;
             color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         nav {
             display: flex;
@@ -80,19 +86,40 @@
             list-style-type: square;
             margin-left: 20px;
         }
+        .info-box {
+            border: 1px solid #e63946;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #fff3f3;
+            margin: 10px 0;
+        }
+        .statistics {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .stat-item {
+            background-color: #e63946;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>El Tomate Chonto</h1>
+        <p>Descubre sus orígenes, beneficios y más.</p>
     </header>
     <nav>
         <ul>
             <li><button class="mainmenubtn">Menú Principal</button>
                 <div class="dropdown-child">
                     <li><a href="index.html">Inicio</a></li>
-            	<li><a href="informacion.html">Información del Producto</a></li>
-            	<li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="informacion.html">Información del Producto</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </div>
             </li>
         </ul>
@@ -121,6 +148,20 @@
                 <li>Propiedades antiinflamatorias.</li>
             </ul>
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQheNdN5yhvYTBlYTpftBqCRDiHrZyTPpGOrDRlV0MHSCOuYIJx2d4_hJSlZuGzuqywfXo&usqp=CAU" alt="Beneficios del Tomate Chonto en la piel">
+        </section>
+        <section class="statistics">
+            <div class="stat-item">
+                <h3>Vitaminas</h3>
+                <p>Rico en Vitamina C</p>
+            </div>
+            <div class="stat-item">
+                <h3>Antioxidantes</h3>
+                <p>Contiene licopeno, un potente antioxidante</p>
+            </div>
+            <div class="stat-item">
+                <h3>Fibra</h3>
+                <p>Ayuda a la digestión</p>
+            </div>
         </section>
         <section>
             <h2>Mascarilla Facial a Base de Tomate Chonto</h2>
@@ -155,4 +196,3 @@
     </script>
 </body>
 </html>
-
