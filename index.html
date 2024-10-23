@@ -1,92 +1,137 @@
-<t name="Homepage" t-name="website.homepage">
-    <t t-call="website.layout">
-        <t t-set="pageName" t-value="'homepage'"/>
-        <div id="wrap" class="oe_structure">
-            <section class="s_sidegrid pt56 pb56 o_colored_level" data-oe-shape-data="{'shape':'web_editor/Wavy/22','colors':{'c3':'o-color-2'},'flip':[],'showOnMobile':false,'shapeAnimationSpeed':'0'}" data-snippet="s_sidegrid" data-name="Side grid">
-                <div class="o_we_shape o_web_editor_Wavy_22 o_header_extra_shape_mapping" style="background-image: url(&quot;/web_editor/shape/web_editor/Wavy/22.svg?c3=o-color-2&quot;);"/>
-                <div class="container">
-                    <div class="row o_grid_mode" data-row-count="13">
-                        <div class="o_grid_item g-col-lg-5 g-height-9 col-lg-5 o_colored_level" style="z-index: 1; grid-area: 1 / 8 / 10 / 13; --grid-item-padding-x: 24px">
-                            <h1>Mascarilla Facial de Tomate Chonto</h1>
-                            <p class="lead">Una mascarilla natural formulada a base de tomate chonto, diseñada para revitalizar y nutrir la piel, mejorando su apariencia y salud.</p>
-                        </div>
-                        <div class="o_grid_item o_grid_item_image g-height-4 g-col-lg-4 col-lg-4" style="z-index: 2; grid-area: 1 / 1 / 5 / 5;">
-                            <img class="img img-fluid rounded" src="/web/image/website.s_sidegrid_default_image_1" alt="Mascarilla Facial de Tomate Chonto" loading="lazy"/>
-                        </div>
-                        <div class="o_grid_item o_grid_item_image o_snippet_mobile_invisible g-height-9 g-col-lg-3 col-lg-3 d-lg-block d-none o_colored_level" style="z-index: 3; grid-area: 1 / 5 / 10 / 8;" data-invisible="1">
-                            <img class="img img-fluid rounded" src="/web/image/website.s_sidegrid_default_image_2" alt="Mascarilla Facial" loading="lazy"/>
-                        </div>
-                        <div class="o_grid_item o_grid_item_image o_snippet_mobile_invisible g-height-9 g-col-lg-4 col-lg-4 d-lg-block d-none o_colored_level" style="z-index: 4; grid-area: 5 / 1 / 14 / 5;" data-invisible="1">
-                            <img class="img img-fluid rounded" src="/web/image/website.s_sidegrid_default_image_4" alt="Beneficios de la Mascarilla" loading="lazy"/>
-                        </div>
-                        <div class="o_grid_item o_grid_item_image o_snippet_mobile_invisible g-height-4 g-col-lg-8 col-lg-8 d-lg-block d-none o_colored_level" style="z-index: 5; grid-area: 10 / 5 / 14 / 13;" data-invisible="1">
-                            <img class="img img-fluid rounded" src="/web/image/website.s_sidegrid_default_image_3" alt="Ingredientes" loading="lazy"/>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage - Mascarilla Facial de Tomate Chonto</title>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXXX-Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-XXXXXXXXX-Y');
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', 'YOUR_PIXEL_ID'); 
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+        }
+        h1 {
+            color: #dc3545; /* Color primario */
+        }
+        .lead {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+        .highlight {
+            background-color: #ffeeba;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        .btn-primary {
+            background-color: #dc3545;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap" class="oe_structure">
+        <section class="s_sidegrid pt56 pb56 o_colored_level">
+            <div class="container">
+                <div class="row o_grid_mode">
+                    <div class="col-lg-5">
+                        <h1>Mascarilla Facial de Tomate Chonto</h1>
+                        <p class="lead">Una mascarilla natural formulada a base de tomate chonto, diseñada para revitalizar y nutrir la piel, mejorando su apariencia y salud.</p>
+                    </div>
+                    <div class="col-lg-4">
+                        <img class="img img-fluid rounded" src="/web/image/website.s_sidegrid_default_image_1" alt="" loading="lazy"/>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="s_numbers_list pt80 pb80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 pb32">
+                        <h3>&nbsp;</h3>
+                        <p class="highlight"><strong>Hidratación Profunda</strong>: Mantiene la piel hidratada y suave.</p>
+                        <p class="highlight"><strong>Propiedades Antioxidantes</strong>: El licopeno y otras vitaminas combaten los radicales libres, previniendo el envejecimiento.</p>
+                        <p class="highlight"><strong>Control del Acné</strong>: Ayuda a regular la producción de sebo, reduciendo espinillas y granos.</p>
+                    </div>
+                    <div class="col-lg-6 offset-lg-1">
+                        <div class="row">
+                            <div class="col-6">
+                                <span class="h2-fs">45%</span>
+                                <p>Reduction in carbon emissions</p>
+                            </div>
+                            <div class="col-6">
+                                <span class="h2-fs">2 Million</span>
+                                <p>Trees Planted</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="s_numbers_list o_cc pt80 pb80 o_cc3 o_colored_level" data-snippet="s_numbers_list" data-name="Numbers list">
-                <div class="container">
-                    <div class="row s_nb_column_fixed">
-                        <div class="col-lg-5 pb32 o_colored_level">
-                            <h3>Beneficios de la Mascarilla</h3>
-                            <p><strong>Hidratación Profunda</strong>: Mantiene la piel hidratada y suave.</p>
-                            <p><strong>Propiedades Antioxidantes</strong>: El licopeno y otras vitaminas combaten los radicales libres, previniendo el envejecimiento.</p>
-                            <p><strong>Control del Acné</strong>: Ayuda a regular la producción de sebo, reduciendo espinillas y granos.</p>
-                            <p><strong>Efecto Iluminador</strong>: Aclara la piel y mejora su luminosidad.</p>
-                            <p><strong>Reducción de Manchas</strong>: Eficaz para atenuar manchas oscuras y uniformar el tono de la piel.</p>
-                            <p><strong>Efecto Calmante</strong>: Alivia la irritación y calma la piel sensible.</p>
-                        </div>
+            </div>
+        </section>
+        <section class="s_color_blocks_2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3><strong>Ingredientes Clave</strong></h3>
+                        <ul>
+                            <li><strong>Tomate Chonto</strong>: Rico en vitaminas C, A, E y antioxidantes.</li>
+                            <li><strong>Otros Ingredientes Naturales</strong>: (Por ejemplo, aloe vera, miel, etc.).</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Más detalles</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="/web/image/website.s_text_image_default_image" class="w-100" alt="" loading="lazy"/>
                     </div>
                 </div>
-            </section>
-            <section class="s_color_blocks_2 o_colored_level" data-snippet="s_color_blocks_2" data-name="Cajas grandes">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-6 o_cc o_cc4 o_colored_level">
-                            <h3><strong>Ingredientes Clave</strong></h3>
-                            <ul>
-                                <li><strong>Tomate Chonto</strong>: Rico en vitaminas C, A, E y antioxidantes. Conocido por sus propiedades purificadoras y regeneradoras.</li>
-                                <li><strong>Otros Ingredientes Naturales</strong>: (Por ejemplo, aloe vera, miel, etc., dependiendo de tu fórmula).</li>
-                            </ul>
-                            <a href="#" class="btn btn-primary">Más detalles</a>
-                        </div>
-                        <div class="col-lg-6 p-0 o_colored_level">
-                            <img src="/web/image/website.s_text_image_default_image" class="w-100 h-100" style="object-fit: cover;" alt="Ingredientes de la Mascarilla" loading="lazy"/>
-                        </div>
+            </div>
+        </section>
+        <section class="s_freegrid pt64 pb64">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-11">
+                        <h3><strong>Cómo Usar la Mascarilla</strong></h3>
+                        <ol>
+                            <li>Limpiar bien el rostro.</li>
+                            <li>Aplicar una capa uniforme de la mascarilla.</li>
+                            <li>Dejar actuar durante 15-20 minutos.</li>
+                            <li>Enjuagar con agua tibia y secar suavemente.</li>
+                        </ol>
                     </div>
                 </div>
-            </section>
-            <section class="s_freegrid o_cc o_cc1 pt64 pb64 o_colored_level" data-snippet="s_freegrid" data-name="Free grid">
-                <div class="container-fluid">
-                    <div class="row o_grid_mode" data-row-count="13">
-                        <div class="o_grid_item g-height-5 o_colored_level g-col-lg-11 col-lg-11" style="z-index: 1; grid-area: 5 / 2 / 10 / 13;">
-                            <h3><strong>Cómo Usar la Mascarilla</strong></h3>
-                            <ul>
-                                <li><strong>Instrucciones</strong>:
-                                    <ol>
-                                        <li>Limpiar bien el rostro.</li>
-                                        <li>Aplicar una capa uniforme de la mascarilla.</li>
-                                        <li>Dejar actuar durante 15-20 minutos.</li>
-                                        <li>Enjuagar con agua tibia y secar suavemente.</li>
-                                    </ol>
-                                </li>
-                            </ul>
-                            <h3><strong>Innovación del Producto</strong></h3>
-                            <ul>
-                                <li><strong>Formulación Única</strong>: Combinación de ingredientes naturales y tecnología avanzada.</li>
-                                <li><strong>Libre de Químicos Agresivos</strong>: Sin parabenos, sulfatos ni fragancias artificiales.</li>
-                                <li><strong>Compromiso con la Sostenibilidad</strong>: Ingredientes de origen responsable y prácticas de producción ecológicas.</li>
-                            </ul>
-                            <h3><strong>Resultados Esperados</strong></h3>
-                            <ul>
-                                <li><strong>Corto Plazo</strong>: Piel más fresca y radiante.</li>
-                                <li><strong>Largo Plazo</strong>: Mejora visible en la textura, tono y salud general de la piel.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </t>
-</t>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
